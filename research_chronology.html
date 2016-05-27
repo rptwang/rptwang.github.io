@@ -1,0 +1,125 @@
+<html>
+
+<head>
+	<title>Research Chronology</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Rochester&subset=latin,latin-ext' rel='stylesheet' type='text/css'>	
+	<link rel="stylesheet" href="css/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+	
+	<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	</script>
+
+	<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+
+<div class="head_background">
+	<div class="container_head">
+		<div class="leftnavi"><table>
+			<tr>
+			<td>
+			<div class="logo" onclick="location.href='index.html'">R</div></td><td style="padding-top: 5px;">&nbsp;Research</td></tr></table></div>
+		
+		<div class="rightnavi webonly">
+		<table>
+			<tr>
+			<td onclick="location.href='research.html'" title="CV and description upon my research interests. "><div class="button_hl2" >Research</div></td><td style="width: 1px; background-color: rgb(180,165,130);"></td><td onclick="location.href='teaching.html'" title="My teaching notes and talks. "><div class="button_hl2" >Teaching</div></td>
+			</tr>
+		</table>
+		</div>
+		</div>
+	</div>
+	</div>
+</head>
+
+<body>
+<div class="container_main">
+<div class="headtitle">
+	Research Chronology
+</div>
+<div class="title gray" style="text-align: left; margin-bottom: 20px;">
+	Online Diary of Research
+</div>
+<div class="txt">
+<div class="subsubtitle">
+The spectra of curl operators on a 3-torus. Summer 2016
+</div>
+Consider a $3$-torus of $2\pi$-periodity in $x^1$, $x^2$ and $x^3$ endowed with the Riemmannian metric
+$$g_{\alpha\beta}=
+\begin{pmatrix}
+1&0&0\\
+0&1+\epsilon\cos x^1&\epsilon\sin x^1\\
+0&\epsilon\sin x^1&1-\epsilon\cos x^1
+\end{pmatrix}^2.$$
+A previous research paper says that the axisymmetric massless Dirac operator working on half-densities
+\begin{multline}
+W_{1/2}(\epsilon)=
+-\frac i2
+\begin{pmatrix}
+e_3{}^1&e_1{}^1-ie_2{}^1
+\\
+e_1{}^1+ie_2{}^1&-e_3{}^1
+\end{pmatrix}
+\frac d{d x^1}
+-\frac i2
+\frac d{d x^1}
+\begin{pmatrix}
+e_3{}^1&e_1{}^1-ie_2{}^1
+\\
+e_1{}^1+ie_2{}^1&-e_3{}^1
+\end{pmatrix}
+\\
++
+\frac{\delta_{jk}}{4\sqrt{\det g_{\alpha\beta}}}
+\left[
+e^j{}_{3}
+\left(\frac{d e^k{}_{2}}{d x^1}\right)
+-
+e^j{}_{2}
+\left(\frac{d e^k{}_{3}}{d x^1}\right)
+\right]I
+\end{multline}
+
+obtains explicit solutions of eigenvalues and eigenfunctions as cited in <i>Downes, RJ; Levitin, M; Vassiliev, D; (2013) Spectral asymmetry of the massless Dirac operator on a 3-torus. JOURNAL OF MATHEMATICAL PHYSICS, 54 (11), 111503</i>. Explicit solutions are of a rare phenomenon with respect to the generality of metric tensor, which has its speciality in this case. It becomes curious to investigate whether the curl operator on the torus with the same Riemmanian metric shares the property for its spectrum to obtain explicit solutions. 
+
+<br><br>
+
+We wrote down explicitly the axisymmetric curl operator on our torus
+$$
+\operatorname{curl}_{1/2}(\epsilon)=\begin{pmatrix}
+		0 & 0 & 0\\
+		0 & 0 & -1\\
+		0 & 1 & 0
+	\end{pmatrix}\frac{d}{d x^1}
+	-(1-\epsilon^2)^{-1}\epsilon\begin{pmatrix}
+		0 & 0 & 0\\
+		0 & \epsilon+\cos x^1 & \sin x^1\\
+		0 & \sin x^1 & \epsilon-\cos x^1
+	\end{pmatrix},
+$$
+which works on half-densities. We have shown it has eigenvalues in their explicit forms
+$$
+	\lambda^{n}=-\frac12-\frac{\epsilon^2}{1-\epsilon^2}\pm\sqrt{n^2-n+\frac14+\frac{\epsilon^2}{(1-\epsilon^2)^2}}
+$$
+for $n\in\mathbb{N}$ together with corresponding explicit eigenfuctions. This result consolidates our conjecture that on such metric all reasonable half-density operators (curl, Laplacian and Dirac) attain explict axisymmetric solutions of eigenvalue problems. We are currently working on further inspections upon this conjecture. <br>
+You can download the research paper here. <a href="documents/research/chronology/Wang,R.._(2015)._Spectral_Problems_on_3-tori.pdf" target="_blank"><button_ll>Wang, R.. (2015). Spectral Problems on 3-tori.</button_ll></a>
+</div> 
+
+</div>
+
+</body>
+
+<footer>
+	<div class="container_footer light">
+		Copyright &#9400; 2015-2025 <a href="http://www.homepages.ucl.ac.uk/~zcahrwa"><button_blue>Ruoyu Wang</button_blue></a> &#9632; Last modified: <span id="date"></span>. 
+	</div>
+	<script src="js/datemodified.js"></script>
+	<script src="js/hyperlink.js"></script>
+</footer>
+
+</html>
